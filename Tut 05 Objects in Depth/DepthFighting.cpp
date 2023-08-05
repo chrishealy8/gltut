@@ -28,8 +28,8 @@ void InitializeProgram()
 {
 	std::vector<GLuint> shaderList;
 
-	shaderList.push_back(Framework::LoadShader(GL_VERTEX_SHADER, "Standard.vert"));
-	shaderList.push_back(Framework::LoadShader(GL_FRAGMENT_SHADER, "Standard.frag"));
+	shaderList.push_back(Framework::LoadShader(GL_VERTEX_SHADER, "MatrixPerspectiveDepth.vert"));
+	shaderList.push_back(Framework::LoadShader(GL_FRAGMENT_SHADER, "StandardColors.frag"));
 
 	theProgram = Framework::CreateProgram(shaderList);
 
